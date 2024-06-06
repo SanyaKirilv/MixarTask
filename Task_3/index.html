@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Battle</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        #shipsContainer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 70%;
+        }
+        .ship {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-right: 20px;
+            width: 45%;
+        }
+        #battleLog {
+            border: 1px solid #ccc;
+            padding: 20px;
+            width: 25%;
+            height: 400px;
+            overflow-y: auto;
+        }
+        button {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="shipsContainer">
+        <div id="shipA" class="ship">
+            <h2>Корабль A</h2>
+            <p>Жизнь: <span id="shipAHealth">100</span></p>
+            <p>Щит: <span id="shipAShield">80</span></p>
+            <label for="moduleSelectA">Выберите модуль:</label>
+            <select id="moduleSelectA">
+                <option value="">--Выберите модуль--</option>
+            </select>
+            <button onclick="installModule('A')">Установить модуль</button>
+            <br>
+            <label for="weaponSelectA">Выберите оружие:</label>
+            <select id="weaponSelectA">
+                <option value="">--Выберите оружие--</option>
+            </select>
+            <button onclick="installWeapon('A')">Установить оружие</button>
+            <h3>Установленные модули:</h3>
+            <ul id="installedModulesA"></ul>
+            <h3>Установленные оружия:</h3>
+            <ul id="installedWeaponsA"></ul>
+        </div>
+        <div id="shipB" class="ship">
+            <h2>Корабль B</h2>
+            <p>Жизнь: <span id="shipBHealth">60</span></p>
+            <p>Щит: <span id="shipBShield">120</span></p>
+            <label for="moduleSelectB">Выберите модуль:</label>
+            <select id="moduleSelectB">
+                <option value="">--Выберите модуль--</option>
+            </select>
+            <button onclick="installModule('B')">Установить модуль</button>
+            <br>
+            <label for="weaponSelectB">Выберите оружие:</label>
+            <select id="weaponSelectB">
+                <option value="">--Выберите оружие--</option>
+            </select>
+            <button onclick="installWeapon('B')">Установить оружие</button>
+            <h3>Установленные модули:</h3>
+            <ul id="installedModulesB"></ul>
+            <h3>Установленные оружия:</h3>
+            <ul id="installedWeaponsB"></ul>
+        </div>
+    </div>
+    <div id="battleLog">
+        <button onclick="startBattle()">Начать бой</button>
+        <h2>Журнал боя</h2>
+        <ul id="log"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

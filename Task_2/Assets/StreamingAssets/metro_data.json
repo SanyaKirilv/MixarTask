@@ -1,0 +1,114 @@
+{
+    "stations": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "J",
+            "M",
+            "N",
+            "O",
+            "K",
+            "L"
+    ],
+    "connections": [
+        {
+            "station1": "A",
+            "station2": "B",
+            "line": "Sokolnicheskaya"
+        },
+        {
+            "station1": "B",
+            "station2": "C",
+            "line": "Sokolnicheskaya"
+        },
+        {
+            "station1": "C",
+            "station2": "D",
+            "line": "Sokolnicheskaya"
+        },
+        {
+            "station1": "D",
+            "station2": "E",
+            "line": "Sokolnicheskaya"
+        },
+        {
+            "station1": "E",
+            "station2": "F",
+            "line": "Sokolnicheskaya"
+        },
+        {
+            "station1": "B",
+            "station2": "H",
+            "line": "Tagansko-Krasnopresnenskaya"
+        },
+        {
+            "station1": "H",
+            "station2": "J",
+            "line": "Tagansko-Krasnopresnenskaya"
+        },
+        {
+            "station1": "J",
+            "station2": "F",
+            "line": "Tagansko-Krasnopresnenskaya"
+        },
+        {
+            "station1": "F",
+            "station2": "G",
+            "line": "Tagansko-Krasnopresnenskaya"
+        },
+        {
+            "station1": "C",
+            "station2": "J",
+            "line": "Circular"
+        },
+        {
+            "station1": "J",
+            "station2": "E",
+            "line": "Circular"
+        },
+        {
+            "station1": "E",
+            "station2": "M",
+            "line": "Circular"
+        },
+        {
+            "station1": "M",
+            "station2": "L",
+            "line": "Circular"
+        },
+        {
+            "station1": "L",
+            "station2": "K",
+            "line": "Circular"
+        },
+        {
+            "station1": "K",
+            "station2": "C",
+            "line": "Circular"
+        },
+        {
+            "station1": "N",
+            "station2": "L",
+            "line": "Arbatsko-Pokrovskaya"
+        },
+        {
+            "station1": "L",
+            "station2": "D",
+            "line": "Arbatsko-Pokrovskaya"
+        },
+        {
+            "station1": "D",
+            "station2": "J",
+            "line": "Arbatsko-Pokrovskaya"
+        },
+        {
+            "station1": "J",
+            "station2": "O",
+            "line": "Arbatsko-Pokrovskaya"
+        }
+    ]
+}
